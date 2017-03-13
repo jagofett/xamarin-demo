@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						xmlns:pages ="clr-namespace:MasterDetailExample.Pages;assembly=MasterDetailExample"
+             x:Class="MasterDetailExample.Pages.TourMaster" IsPresented="True">
+	<MasterDetailPage.Master >
+		<ContentPage Title="MenuPage">
+			<ContentPage.Padding>
+				<OnPlatform x:TypeArguments="Thickness"
+										iOS="20,40,20,10"
+										Android="15,20"
+										WinPhone="20">
+				</OnPlatform>
+			</ContentPage.Padding>
+			<StackLayout>
+				<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+					<Label Text="Tailor-made Tour Stops" FontSize="24"
+									HorizontalOptions="Center"
+									VerticalOptions="Start" />
+					<Label Text="/    /    |    \    \"   FontSize="24"
+								 HorizontalOptions="Center"
+								 VerticalOptions="Start"/>
+				</StackLayout>
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="1*" />
+						<RowDefinition Height="1*" />
+						<RowDefinition Height="1*" />
+					</Grid.RowDefinitions>
+
+
+					<Image Source="StopPastry.jpg" Aspect="AspectFill"  HeightRequest="90" WidthRequest="120"
+								 Grid.Row="0" Grid.Column="0"/>
+					<Button Text="Coffee"
+								Clicked="CoffeeButton_Clicked"
+									Grid.Row="0" Grid.Column="1"/>
+
+
+					<Image Source="StopFountain.jpg" Aspect="AspectFill"  HeightRequest="90" WidthRequest="120"
+								 Grid.Row="1" Grid.Column="0"/>
+					<Button Text="Fountain"
+									Clicked="FountainButton_Clicked"
+									Grid.Row="1" Grid.Column="1"/>
+
+					
+					<Image Source="StopArtInstitute.jpg" Aspect="AspectFill"  HeightRequest="90" WidthRequest="120" 
+								 Grid.Row="2" Grid.Column="0"/>
+					<Button Text="Art Institute"
+							Clicked="ArtButton_Clicked" 
+									Grid.Row="2" Grid.Column="1"/>
+				</Grid>
+			</StackLayout>
+		</ContentPage>
+	</MasterDetailPage.Master>
+
+
+</MasterDetailPage>

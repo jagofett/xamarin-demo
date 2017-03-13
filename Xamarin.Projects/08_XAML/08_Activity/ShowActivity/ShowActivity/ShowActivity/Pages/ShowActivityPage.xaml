@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowActivity.Pages.ShowActivityPage">
+	<StackLayout>
+		<Label Text="Activity View" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" />
+		
+		<ActivityIndicator Color="#FFFF9C35" x:Name="Activity1" />
+		<Button Text="Start Process..." Clicked="Button_Clicked"/>
+		
+		<StackLayout Padding="0,20">
+			<Label Text="Activity View (Blue)" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" />
+			
+			<ActivityIndicator Color="Blue" x:Name="Activity2" />
+		</StackLayout>
+		<Button Text="Get Web Text" Clicked="WebButton_Clicked"/>
+
+		<Label x:Name="WebTextLabel" />
+
+	</StackLayout>
+</ContentPage>

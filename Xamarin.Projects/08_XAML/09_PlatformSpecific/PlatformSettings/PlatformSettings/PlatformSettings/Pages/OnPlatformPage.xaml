@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlatformSettings.Pages.OnPlatformPage">
+	<StackLayout >
+		<StackLayout.Padding>
+			<OnPlatform x:TypeArguments="Thickness" 
+									iOS="20,40,20,10"
+									Android="15,20"			
+									WinPhone="20">			
+			</OnPlatform>
+		</StackLayout.Padding>
+
+		<Label Text="Tour Information" >
+
+		</Label>
+		<Label >
+			<Label.FormattedText>
+				<FormattedString>
+					<Span Text="Your tour starts at "  FontSize="24" />
+					<!--  Yellow text doesn't look good on iPhone or Windows Phone,
+				        Use OnPlatform property to adjust for each platform-->
+					<Span Text="2:30 P.M, " FontAttributes="Bold" ForegroundColor="Yellow" FontSize="24" />
+					<Span Text="today. Your guide "  FontSize="24" />
+					<Span Text="Andrew " FontSize="24" >
+						<Span.ForegroundColor>
+							<OnPlatform x:TypeArguments="Color" iOS="Purple"  Android="Yellow" WinPhone="Maroon" />
+
+						</Span.ForegroundColor>
+					</Span>
+					<Span Text="will be waiting at the Lion statue. "  FontSize="24" />
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="ShowLayout.Pages.StackPage" 
+						 xmlns:views="clr-namespace:ShowLayout.CustomViews;assembly=ShowLayout">
+	<StackLayout>
+		<Button Text="No Width" /> 
+		<Button WidthRequest="40" Text="Width=40"/>
+		<Button Text="No Width" HorizontalOptions="Start"/>
+		<Button Text="No Width, with longer text" HorizontalOptions="Start"/>
+		<Button WidthRequest="40" Text="Width=40" HorizontalOptions="Start"/>
+
+		<Button Text="No Width, with longer text" HorizontalOptions="End"/>
+		<Button Text="No Width, with longer text" HorizontalOptions="Center"/>
+	</StackLayout>
+
+</ContentPage>

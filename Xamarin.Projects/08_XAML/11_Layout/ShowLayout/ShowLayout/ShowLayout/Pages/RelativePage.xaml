@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowLayout.Pages.RelativePage">
+	<StackLayout>
+		<Button Text="Move the MainBox" Clicked="HCenterButton_Clicked" />
+
+		<RelativeLayout x:Name="RelativeLayout1">
+			<!-- RelativeLayout is similar to the iOS adaptive layout system. 
+		       Use it to position an View relative to other items (parent element, sibling elements)
+					 A constraint is a rule used to determine size or location. -->
+			<BoxView x:Name ="MainBox" WidthRequest="200" HeightRequest="100"
+							 BackgroundColor="#FF448888"
+						 />
+			<BoxView x:Name="RedBox"
+				BackgroundColor="#BB544B"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property= Y,
+				                            ElementName=MainBox, Constant=120}"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, Property= X, 
+				                            ElementName=MainBox, Constant=10}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, Property= Width,
+				                                 ElementName=MainBox, Factor= 0.6}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, Property= Height,
+				                                  ElementName=MainBox, Factor= 1.0}"/>
+
+			<BoxView x:Name="GreenBox"
+				BackgroundColor="#4BBB7C"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, Property= Y,
+				                            ElementName=MainBox, Constant=80}"
+				RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, Property= X, 
+				                            ElementName=MainBox, Constant=180}"
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, Property= Width,
+				                                 ElementName=MainBox, Factor= 0.2}"
+				RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, Property= Height,
+				                                  ElementName=MainBox, Factor= 0.2}"/>
+		</RelativeLayout>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="TourStops.Pages.StartPage" Title="Start Page" >
+	<StackLayout VerticalOptions="Start" >
+		
+		
+		<Button x:Name="ShowImageButton" Text="Images" Clicked="ShowImageButton_Clicked" />
+		<Button x:Name="LoadImageButton" Text="Load Images" Clicked="EmbeddedImageButton_Clicked" />
+	
+		
+	</StackLayout>
+</ContentPage>

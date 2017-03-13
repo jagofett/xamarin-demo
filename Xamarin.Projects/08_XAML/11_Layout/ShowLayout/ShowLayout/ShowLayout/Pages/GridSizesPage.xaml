@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowLayout.Pages.GridSizesPage">
+	<StackLayout>
+		<Grid>
+			<!-- A default grid has one row and one column -->
+
+		</Grid>
+
+		<Grid>
+			<!-- Define additional rows and columns  -->
+			<Grid.RowDefinitions>
+				<RowDefinition Height="24" />
+				<RowDefinition Height="32" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="78" />
+				<ColumnDefinition Width	="88" />
+			</Grid.ColumnDefinitions>
+		</Grid>
+
+		<Grid>
+			<!-- There are three sizes for column and row -->
+			<Grid.RowDefinitions>
+				<RowDefinition Height="24" /> <!-- This is absolute size-->
+				<RowDefinition Height="32" /> <!-- This is absolute size-->
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" /> <!-- Auto: adjust to size of element in column-->
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+		</Grid>
+
+		<Grid>
+		<!-- There are three sizes for column and row -->
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="4*" /> <!-- Star: proportional size -->
+			<ColumnDefinition Width="6*" /><!-- Star: proportional size -->
+		
+		</Grid.ColumnDefinitions>
+		
+		</Grid>
+
+		<Grid>
+			<!-- There are three sizes for column and row -->
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="25*" />	<!-- Star: proportional size -->
+				<ColumnDefinition Width="25*" />	<!-- Star: proportional size -->
+
+			</Grid.ColumnDefinitions>
+
+		</Grid>
+	</StackLayout>
+</ContentPage>

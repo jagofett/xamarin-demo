@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowLayout.Pages.AbsolutePage">
+	<AbsoluteLayout>
+		<!-- Layout Bounds, a comma separated list indicated the 
+					bounding rectangle  x, y, width, height values -->
+		<BoxView AbsoluteLayout.LayoutBounds="230, 50, 100, 100" 
+						 BackgroundColor="#FF448888" />
+
+		<BoxView AbsoluteLayout.LayoutBounds="20,20,50, 50" 
+						 BackgroundColor="#BB544B" />
+		
+		<!-- LayoutFlags, set what the layout bounds value mean.
+					(proportional units or device units) 					-->
+		<BoxView AbsoluteLayout.LayoutBounds="0.2, 0.8, 0.25, 0.25" 
+						 AbsoluteLayout.LayoutFlags="PositionProportional, SizeProportional" 
+						 BackgroundColor="#957870" />
+	</AbsoluteLayout>
+</ContentPage>	

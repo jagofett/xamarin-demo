@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowLayout.Pages.StackPage2">
+	<StackLayout Padding="20">
+		<Label Text="Add Padding" />
+		<Stepper Minimum="0" Maximum="20" Increment="4"  x:Name="PaddingStepper" ValueChanged="PaddingStepper_ValueChanged"/>
+		<Label Text="Add Spacing" />
+		<Stepper Minimum="0" Maximum="20" Increment="2" x:Name="SpacingStepper" ValueChanged="SpacingStepper_ValueChanged"/>
+		<Label Text="Switch Orientation" />
+		<Switch x:Name="OrientationSwitch" Toggled="OrientationSwitch_Toggled" HorizontalOptions="Start" />
+		<StackLayout  x:Name="StackLayout1" VerticalOptions="FillAndExpand">
+			<BoxView BackgroundColor="#FF448844"  />
+			<BoxView BackgroundColor="#FF448855" />
+			<BoxView BackgroundColor="#FF448866"   />
+			<BoxView BackgroundColor="#FF448877" />
+			<BoxView BackgroundColor="#FF448888"  />
+			<BoxView BackgroundColor="#FF448899" />
+		</StackLayout>
+	</StackLayout>
+
+</ContentPage>

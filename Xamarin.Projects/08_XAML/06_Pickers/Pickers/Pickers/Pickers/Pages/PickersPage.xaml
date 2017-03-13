@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pickers.Pages.PickersPage">
+	<StackLayout Padding="20">
+		<Label Text="Pickers" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24"/>
+		<TimePicker  x:Name ="TimePicker1" />
+		<DatePicker x:Name ="DatePicker1"  Format="yyyy/MM/dd"/>
+		<Picker Title="Choose Destination" SelectedIndex="2" x:Name="Picker1"/>
+		<Button  Text="Meet me..." Clicked="MeetButton_Clicked" />
+		<Label x:Name ="MessageLabel"  FontSize="20" LineBreakMode="WordWrap"/>
+
+		<Label Text="Selectors" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24"/>
+		<Slider Maximum="125.0" Minimum="20.0" Value="22.0"/>
+	</StackLayout>
+</ContentPage>

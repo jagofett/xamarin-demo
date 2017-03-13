@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="TourStops.Pages.TilesPage" BackgroundColor="#FF888888">
+	<Grid ColumnSpacing="2" RowSpacing="2" VerticalOptions="FillAndExpand" Padding="2">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid Grid.Row="0" Grid.Column="0" >
+
+			<Image Source="Back01.png" Aspect="AspectFill" InputTransparent="False" />
+
+			<Label TextColor="White" Text="Maps"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconMap.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center"  />
+
+		</Grid>
+		<Grid Grid.Row="0" Grid.Column="1">
+
+			<Image Source="Back02.png" Aspect="AspectFill" InputTransparent="False" />
+			<BoxView BackgroundColor="#44000000" />
+			<Label TextColor="White" Text="Shopping"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconShopping.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center"  />
+
+		</Grid>
+		<Grid Grid.Row="0" Grid.Column="2">
+
+			<Image Source="Back03.png" Aspect="AspectFill" InputTransparent="False" />
+			<BoxView BackgroundColor="#44000000" />
+			<Label TextColor="White" Text="Museum"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconMuseum.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center"  />
+
+		</Grid>
+		<Grid Grid.Row="1" Grid.Column="0" >
+			<Image Source="Back04.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Medical"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconAmbulance.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center"   />
+
+		</Grid>
+		<Grid Grid.Row="1" Grid.Column="1">
+			<Image Source="Back05.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Transit"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconBus.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center"  />
+
+		</Grid>
+		
+			<Grid Grid.Row="1" Grid.Column="2" >
+			<Image Source="Back06.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Cocktails"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconCocktails.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+		<Grid Grid.Row="2" Grid.Column="0"  >
+			<Image Source="Back07.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Food"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconFood.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	<Grid Grid.Row="2" Grid.Column="1" >
+			<Image Source="Back08.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Coffee"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconCoffee.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	<Grid Grid.Row="2" Grid.Column="2" >
+			<Image Source="Back09.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Sports"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconSports.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	<Grid Grid.Row="3" Grid.Column="0" >
+			<Image Source="Back10.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="City"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconBuilding.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	<Grid Grid.Row="3" Grid.Column="1" >
+			<Image Source="Back11.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Music"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconMusic.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	<Grid Grid.Row="3" Grid.Column="2" >
+			<Image Source="Back12.png" Aspect="AspectFill" InputTransparent="False" />
+			<Label TextColor="White" Text="Shopping"  HorizontalOptions="Center" VerticalOptions="End" FontSize="21" FontAttributes="Bold"/>
+			<Image Source="IconShopping.png" Aspect="AspectFill" InputTransparent="False" HorizontalOptions="Center" VerticalOptions="Center" />
+
+		</Grid>
+	</Grid>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="TourStops.Pages.ImagePage" Title="Image Page">
+	
+		<Grid HeightRequest="250" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="100" />
+				<RowDefinition Height="100" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+		
+			<Image Source="StopPretzel.jpg" Aspect="AspectFill"  HeightRequest="100"  WidthRequest="200" x:Name="Image1" />
+		
+			<BoxView BackgroundColor="##990000" HeightRequest="100"  WidthRequest="100" Grid.Row="1" />
+
+			<Image Source="IconCoffee.png" Aspect="Fill"  HeightRequest="100"  WidthRequest="100" x:Name="Image2" Grid.Row="1" />
+		
+			<StackLayout Orientation="Vertical" Padding="10" Grid.Row="2">
+				<Button Text="Aspect Fit" Clicked="AspectFitButton_Clicked"/>
+				<Button Text="Aspect Fill" Clicked="AspectFillButton_Clicked"/>
+				<Button Text="Fill"  Clicked="FillButton_Clicked"/>
+			
+
+			</StackLayout>
+		</Grid>
+		<!-- Naming Rules 
+					Because of the different ways the platforms handle names and file paths
+					
+					1. File names, must start with a letter
+					2. File names, letters and numbers only. (no - _ )
+					3. No paths or subfolders allowed.
+					4. Must be unique names
+			
+		-->
+	
+
+</ContentPage>

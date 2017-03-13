@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkWithText.Pages.LabelFormattingPage">
+	<StackLayout Padding="20">
+		<Label >
+			<Label.FormattedText>
+				<FormattedString>
+				<Span Text="This is the bold text. " FontAttributes="Bold" FontSize="24" />
+				<Span Text="We continue with normal text, " FontSize="24" />
+				<Span Text="then switch to " FontAttributes="Bold" ForegroundColor="Red" FontSize="24" />
+				<Span Text="BIG, " FontAttributes="Bold" ForegroundColor="Red" FontSize="40"/>
+				<Span Text="red text. " FontAttributes="Bold" ForegroundColor="Red" FontSize="24" />
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
+		<StackLayout Padding="0,20">
+			<Label >
+				<Label.FormattedText>
+					<FormattedString>
+						<Span Text="Your tour starts at "  FontSize="24" />
+
+						<Span Text="2:30 P.M, " FontAttributes="Bold" ForegroundColor="Yellow" FontSize="24"/>
+						<Span Text="today. Your guide "  FontSize="24" />
+						<Span Text="Andrew " ForegroundColor="Yellow" FontSize="24" />
+						<Span Text="will be waiting at the Lion statue. "  FontSize="24" />
+					</FormattedString>
+				</Label.FormattedText>
+			</Label>
+		</StackLayout>
+	</StackLayout>
+	
+</ContentPage>

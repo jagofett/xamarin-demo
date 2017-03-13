@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowLayout.Pages.GridSpacing" >
+	<StackLayout Padding="20">
+
+
+		<Grid x:Name="Grid1"  BackgroundColor="#E3e3e3" RowSpacing="2" ColumnSpacing="2" Padding="3">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+				<RowDefinition Height="1*" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width	="1*" />
+				<ColumnDefinition Width="1*" />
+	
+				
+		
+			</Grid.ColumnDefinitions>
+			<BoxView Color="#FF448888" Grid.Row="0" Grid.Column="0"/>
+			<BoxView Color="#FF448888" Grid.Row="0" Grid.Column="1"/>
+			<BoxView Color="#FF448888" Grid.Row="0" Grid.Column="2"/>
+			<BoxView Color="#FF448899" Grid.Row="1" Grid.Column="0"/>
+			<BoxView Color="#FF448899" Grid.Row="1" Grid.Column="1"/>
+			<BoxView Color="#FF448899" Grid.Row="1" Grid.Column="2"/>
+			<BoxView Color="#FF4488AA" Grid.Row="2" Grid.Column="0"/>
+			<BoxView Color="#FF4488AA" Grid.Row="2" Grid.Column="1"/>
+			<BoxView Color="#FF4488AA" Grid.Row="2" Grid.Column="2"/>
+			<BoxView Color="#FF4488BB" Grid.Row="3" Grid.Column="0"/>
+			<BoxView Color="#FF4488BB" Grid.Row="3" Grid.Column="1"/>
+			<BoxView Color="#FF4488BB" Grid.Row="3" Grid.Column="2"/>
+			<BoxView Color="#FF4488CC" Grid.Row="4" Grid.Column="0"/>
+			<BoxView Color="#FF4488CC" Grid.Row="4" Grid.Column="1"/>
+			<BoxView Color="#FF4488CC" Grid.Row="4" Grid.Column="2"/>
+		</Grid>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TourStops.Pages.FirstPage">
+	<StackLayout VerticalOptions="Start">
+		<Label FontSize="24" Text="Tailor-made Tour Stops" HorizontalTextAlignment="Center" />
+		<Label FontSize="24" Text="" HorizontalTextAlignment="Center" x:Name="TourName" />
+	</StackLayout>
+</ContentPage>

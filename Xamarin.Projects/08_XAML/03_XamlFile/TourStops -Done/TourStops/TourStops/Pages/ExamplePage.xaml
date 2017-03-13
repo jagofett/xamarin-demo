@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TourStops.Pages.ExamplePage">
+	<StackLayout VerticalOptions="Start" >
+		<Label Text="Show More Pages" />
+		<Button x:Name="ShowDetailsButton" Text="Details" Clicked="ShowDetailsButton_Clicked" />
+		<Button x:Name="ShowTilesButton" Text="Tiles" Clicked="ShowTilesButton_Clicked" />
+		<Button x:Name="ShowScheduleButton" Text="Schedule" Clicked="ShowScheduleButton_Clicked" />
+	</StackLayout>
+</ContentPage>
