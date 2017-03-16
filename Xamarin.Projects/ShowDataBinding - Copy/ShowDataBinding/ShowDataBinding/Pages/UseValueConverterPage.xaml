@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowDataBinding.Pages.UseValueConverterPage"
+						 xmlns:converters="clr-namespace:ShowDataBinding.ValueConverters;assembly=ShowDataBinding">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<converters:CountToCapacityConverter x:Key="capacityConverter"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<StackLayout Padding="20">
+		<Label Text="Bind from Stepper to Label" FontSize="24"/>
+		<BoxView HeightRequest="6" BackgroundColor="#FF333333" />
+
+		<Label BindingContext="{x:Reference GuestCountStepper}" 
+					 Text="{Binding Path=Value}" FontSize="24"/>
+
+		<Label BindingContext="{x:Reference GuestCountStepper}" 
+					 Text="{Binding Path=Value , Converter={StaticResource capacityConverter}}"
+					 FontSize="18"/>
+		<Stepper Maximum="20" Minimum="5" Value="6" x:Name="GuestCountStepper"/>
+	</StackLayout>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App3"
+             x:Class="App3.MainPage">
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <!--<RowDefinition Height="Auto"/>-->
+        </Grid.RowDefinitions>
+        <Button Text="Load with no template" Clicked="LoadSimple_ClickedAsync" Grid.Row="0"/>
+        <Button Text="Load with template" Clicked="LoadCustom_ClickedAsync"  Grid.Row="1"/>
+        <ListView  Grid.Row="2" x:Name="filmList1" >
+
+        </ListView>
+        <ListView  x:Name="filmList2" ItemsSource="{Binding}" Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding title}" />
+                            <Label Text="{Binding year}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="WorkingWithListView.Pages.BasicList">
+	<Grid Padding="20">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Button Text="Add Data" Clicked="AddDataButton_Clicked"/>
+		<Button Text="Add Data from Custom Class" Clicked="AddData2Button_Clicked"  Grid.Row="1"/>
+		<ListView Header="Tour Guides Header" Footer="Tour Guids Footer" Grid.Row="2" x:Name="GuidesListView" >
+
+		</ListView>
+	</Grid>
+</ContentPage>

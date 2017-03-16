@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowDataBinding.Pages.StartPage">
+	<StackLayout Padding="20">
+		<Button Text="No Binding" Clicked="NoBindingButton_Clicked" />
+		<Button Text="With Binding" Clicked="BindingButton_Clicked" />
+		<Button Text="View to View Binding" Clicked="ViewButton_Clicked" />
+		<Button Text="ValueConverter Binding" Clicked="ConverterButton_Clicked" />
+		<Button Text="Change Notification" Clicked="ChangeButton_Clicked" />
+		<Button Text="Working With ListView" Clicked="ListsButton_Clicked" />
+		<Button Text="Data Template and ListView" Clicked="DataTemplateButton_Clicked" />
+		<Button Text="View Model" Clicked="ViewModelButton_Clicked" />
+	</StackLayout>
+</ContentPage>
