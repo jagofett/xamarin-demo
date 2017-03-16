@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommonPageExample.Pages.LookAtCommonPage"
+						 Icon="IconTransport.png"
+						 BackgroundImage="Back08.png" 
+						 Title="Look At Page">
+
+
+
+	<StackLayout Padding="10, 30" HorizontalOptions="Center" BackgroundColor="#44FFFFFF" >
+		<StackLayout.BackgroundColor>
+			<OnPlatform x:TypeArguments="Color" iOS="#44FFFFFF"  Android="#44000000"
+																						WinPhone="#44FFFFFF" />
+
+		</StackLayout.BackgroundColor>
+
+		<Label Text="With Background Image" FontSize="24" HorizontalTextAlignment="Center" />
+
+		<Button Text="Display Alert" Clicked="AlertButton_Clicked" />
+		<Button Text="Display Action Sheet" Clicked="ActionSheetButton_Clicked" />
+		<Label x:Name ="MessageLabel" HorizontalTextAlignment="Center"/>
+
+
+		<Button Text="Mark Page Busy" Clicked="BusyButton_Clicked" />
+	</StackLayout>
+</ContentPage>

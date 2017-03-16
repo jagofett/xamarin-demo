@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowDataBinding.Pages.WithBinding">
+	<StackLayout Padding="20" >
+		<Label Text="Bound Labels" FontSize="24"/>
+		<Label Text="{Binding GuideName}" FontSize="18"/>
+		<Label Text="{Binding HomeCity}" FontSize="18"/>
+		<Label Text="Bound Entry Views" FontSize="24"/>
+		<Entry Text="{Binding GuideName, Mode=TwoWay}" FontSize="18" />
+		<Entry Text="{Binding HomeCity, Mode=TwoWay}" FontSize="18"/>
+		<StackLayout x:Name="ChildStackLayout" Padding="5,20" BackgroundColor="#FF224422">
+			<Label Text="Use another Binding Context" FontSize="24"/>
+			<Label Text="{Binding GuideName}" FontSize="18" />
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
+
+

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationPageExample.Pages.OddPage" Title="Odd">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Name="OddMenu A" Clicked="OddMenuA_Clicked"  Order="Primary" Priority="0" />
+		<ToolbarItem Name="OddMenu B" Clicked="OddMenuA_Clicked"  Order="Primary" Priority="1" />
+	</ContentPage.ToolbarItems>
+
+	<StackLayout Padding="20" >
+		
+			<Label Text="Odd Page " FontSize="40" />
+			<Label x:Name ="MessageLabel"  FontSize="18"/>
+		
+	</StackLayout>
+</ContentPage>

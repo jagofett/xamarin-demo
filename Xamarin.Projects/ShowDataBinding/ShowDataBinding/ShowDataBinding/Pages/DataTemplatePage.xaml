@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 x:Class="ShowDataBinding.Pages.DataTemplatePage">
+	<Grid Padding="20" >
+		<!--<ListView  x:Name="TourStopsListView" ItemsSource="{Binding}" >
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout>
+						<Label Text="{Binding Name}" />
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>-->
+		
+		<ListView  x:Name="TourStopsListView" ItemsSource="{Binding}" ListView.HasUnevenRows="True">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Grid RowSpacing="12" ColumnSpacing="12">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+							<Grid.RowDefinitions>
+								<RowDefinition Height="30" />
+								<RowDefinition Height="1*" />
+								<RowDefinition Height="Auto" />
+								<RowDefinition Height="12" />
+							</Grid.RowDefinitions>
+							<Label FontSize="40" Text="{Binding StopNumber}" HorizontalOptions="Center" VerticalOptions="Start"
+										 VerticalTextAlignment="Center" HorizontalTextAlignment="End"
+										 Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" />
+
+							<Image Source="{Binding ImageUrl}"
+										 WidthRequest="110" HeightRequest="70"
+										 Aspect="AspectFill"
+										 HorizontalOptions="Center" VerticalOptions="Start"
+							       Grid.Row="0" Grid.Column="1"  Grid.RowSpan="2" />
+
+							<Label Text="{Binding Name}" FontSize="18"  FontAttributes="Bold"
+										 Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Start" />
+							<Label Text="{Binding Description}" FontSize="14"
+										 Grid.Row="1"  Grid.Column="2" Grid.RowSpan="2"/>
+							<StackLayout Orientation="Vertical"  Grid.Row="1"  Grid.Column="1" Grid.RowSpan="2" VerticalOptions="Start" Padding="0,30,0,0">
+								<Button Text="Map" />
+								<Button Text="{Binding Phone}" />
+							</StackLayout>
+
+						</Grid>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+
+
+	</Grid>
+</ContentPage>

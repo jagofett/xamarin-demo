@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommonPageExample.Pages.WithBackground" >
+	<StackLayout Padding="20">
+		<Label Text="With Background Image" FontSize="40" HorizontalTextAlignment="Center" />
+		
+		<Button Text="Display Alert" Clicked="AlertButton_Clicked" />
+		<Button Text="Display Action Sheet" Clicked="ActionSheetButton_Clicked" />
+		<Button Text="Mark Page Busy" Clicked="BusyButton_Clicked" />
+	</StackLayout>
+</ContentPage>

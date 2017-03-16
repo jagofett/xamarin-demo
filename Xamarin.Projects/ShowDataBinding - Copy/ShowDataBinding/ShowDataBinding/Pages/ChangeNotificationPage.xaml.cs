@@ -13,7 +13,7 @@ namespace ShowDataBinding.Pages {
 			var guide = new Models.Guide();
 			guide.GuideName = "Jennie";
 			guide.HomeCity = "Miami";
-			guide.NumberOfToursLed = 67;
+			guide.NumberOfGuidedTours = 67;
 
 			this.BindingContext = guide;
 		}

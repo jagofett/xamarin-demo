@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedPageExample.Pages.ArtPage" Title="Art Institute">
+	<StackLayout>
+		<BoxView BackgroundColor="#44004400" HeightRequest="6"  />
+		<Grid HeightRequest="250" >
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="60" />
+			</Grid.RowDefinitions>
+
+			<Image Source="StopArtInstitute.jpg" Aspect="AspectFill"  HeightRequest="250" Grid.RowSpan="2"/>
+		
+			<BoxView BackgroundColor="#66004400" Grid.Row="1" />
+			<Image Source="MapPin.png" Aspect="AspectFit" WidthRequest="50" HeightRequest="50" Grid.Row="1" HorizontalOptions="End" />
+			<Label Text="Art Institute of Chicago" TextColor="White" FontSize="28" FontAttributes="Bold" Grid.Row="1"  HorizontalTextAlignment="Start" VerticalOptions="Center"/>
+		</Grid>
+		
+		<StackLayout Orientation="Vertical" Padding="10">
+
+			<Label Text="See the span of art history" TextColor="White" FontSize="18" FontAttributes="Italic" />
+			<Label FontSize="14"  Text="The Art Institute of Chicago is an art museum located in Chicago's Grant Park. It features a collection of Impressionist and Post-Impressionist art in its permanent collection. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut leo augue. Nulla dignissim, velit ut tincidunt sagittis, dui tellus dapibus nisi, ultrices feugiat risus dolor ut quam. Proin bibendum, augue et suscipit venenatis, tellus tellus varius elit, volutpat semper purus dolor eget magna. Etiam sollicitudin dolor id dui feugiat molestie. Praesent consequat bibendum mi, ac lacinia dolor hendrerit et. Aenean a purus quis lacus hendrerit ullamcorper."
+/>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
